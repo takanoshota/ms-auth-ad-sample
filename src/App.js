@@ -27,6 +27,7 @@ function getAccount() {
   }
 }
 
+/*
 function signIn() {
   // ログイン処理（ユーザーがまだログインしていない場合）
   myMSALObj.loginPopup()
@@ -43,12 +44,13 @@ function signIn() {
       console.log(error);
     });
 }
+*/
 
 // 認証情報がキャッシュにあるか確認し、あれば取得
 const account = getAccount();
 if (!account) {
   // アカウントが見つからない場合、サインイン関数を呼び出す
-  signIn();
+  console.log(`no name`);
 } else {
   // アカウントが存在する場合、必要な操作を行う
   console.log(`User's name: ${account.name}`);
@@ -60,7 +62,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          [v5]Edit <code>src/App.js</code> and save to reload.
+          [v6]Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
