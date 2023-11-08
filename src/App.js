@@ -5,9 +5,9 @@ import * as msal from '@azure/msal-browser';
 
 const msalConfig = {
   auth: {
-    clientId: 'YOUR_CLIENT_ID', // Azure ADでのアプリ登録から取得
-    authority: 'https://login.microsoftonline.com/YOUR_TENANT_ID', // テナント情報
-    redirectUri: 'YOUR_REDIRECT_URI' // リダイレクトURI
+    clientId: '6367da79-4045-4a91-8ccc-495eef9744c5', // Azure ADでのアプリ登録から取得
+    authority: 'https://login.microsoftonline.com/43c18f2d-9bbd-4dfa-971a-8ab0d9b85039', // テナント情報
+    redirectUri: 'https://proud-rock-0aa656700.4.azurestaticapps.net' // リダイレクトURI
   },
   cache: {
     cacheLocation: "localStorage", // キャッシュをlocalStorageに設定
@@ -60,7 +60,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          [v5]Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
